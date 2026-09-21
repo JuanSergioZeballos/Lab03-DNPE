@@ -1,4 +1,4 @@
-package com.unsa.lab03idnp
+package com.unsa.lab03idnp.ui.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
@@ -9,11 +9,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun HomeScreen(onNavigateToDetail: (String) -> Unit) {
+fun DetailScreen(textReceived: String, onBack: () -> Unit) {
     Column(modifier = Modifier.padding(16.dp)) {
-        Text(text = "Pantalla de Inicio")
-        Button(onClick = { onNavigateToDetail("Texto de ejemplo") }) {
-            Text("Ir a Detalle con parámetro")
+        Text(text = "Pantalla de Detalle")
+        Text(text = "Parámetro recibido: $textReceived")
+        Button(onClick = onBack) {
+            Text("Volver")
         }
     }
 }
