@@ -1,4 +1,4 @@
-package com.unsa.lab03idnp
+package com.unsa.lab03idnp.ui.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavType
@@ -6,6 +6,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.unsa.lab03idnp.ui.screens.detail.DetailScreen
+import com.unsa.lab03idnp.ui.screens.home.HomeScreen
 
 @Composable
 fun AppNavigation() {
