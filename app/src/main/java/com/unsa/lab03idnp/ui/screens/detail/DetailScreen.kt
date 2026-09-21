@@ -1,4 +1,4 @@
-package com.unsa.lab03idnp.ui.screens
+package com.unsa.lab03idnp.ui.screens.detail
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
